@@ -6,7 +6,7 @@
 package paqueteuno;
 
 /**
- *
+ *  
  * @author reroes
  */
 public class Ejecutor {
@@ -14,11 +14,13 @@ public class Ejecutor {
         // Crear un objeto de tipo FacturaTelefono
         FacturaTelefono ft = new FacturaTelefono();
         // Valores de entrada
+        String nombreApellidos = "Ronald Calderon";
         String numeroTelefono = "098321321";
         double minutos = 230;
         double valorMinuto = 0.25;
         // uso de los métodos establecer para darle valores a los 
         // atributos del objeto.
+        ft.establecerNombreApellidos(nombreApellidos);
         ft.establecerNumeroTelefono(numeroTelefono);
         ft.establecerMinutosMes(minutos);
         ft.establecerValorMinuto(valorMinuto);
@@ -34,9 +36,9 @@ public class Ejecutor {
         
         // Se hace uso de los métodos obtener para presentar en pantalla lo 
         // requerido
-        System.out.printf("Factura de Teléfono\n\nNúmero de teléfono: %s\n"
+        System.out.printf("Factura de Teléfono\n\nNombres y Apellidos: %s\nNúmero de teléfono: %s\n"
                 + "Minutos mensuales: %.2f\nValor por minuto: %.2f\n"
-                + "Valor a cancelar: %.2f\n", ft.obtenerNumeroTelefono(),
+                + "Valor a cancelar: %.2f\n",ft.obtenerNombreApellidos(), ft.obtenerNumeroTelefono(),
                 ft.obtenerMinutosMes(), ft.obtenerValorMinuto(),
                 ft.obtenerValorFactura());
     }
